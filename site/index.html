@@ -1,399 +1,1489 @@
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://walterga43.github.io/site/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>LaTeX for Dummies</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+      
 
-    <link rel="canonical" href="https://walterga43.github.io/site/" />
 
-    <link rel="icon" href="assets/images/favicon.png" />
-    <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1" />
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
-    <title>LaTeX for Dummies</title>
-
-    <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback"
-    />
-    <style>
-      :root {
-        --md-text-font: "Roboto";
-        --md-code-font: "Roboto Mono";
-      }
-    </style>
-
-    <script>
-      ((__md_scope = new URL(".", location)),
-        (__md_hash = (e) =>
-          [...e].reduce((e, _) => (e << 5) - e + _.charCodeAt(0), 0)),
-        (__md_get = (e, _ = localStorage, t = __md_scope) =>
-          JSON.parse(_.getItem(t.pathname + "." + e))),
-        (__md_set = (e, _, t = localStorage, a = __md_scope) => {
-          try {
-            t.setItem(a.pathname + "." + e, JSON.stringify(_));
-          } catch (e) {}
-        }));
-    </script>
+    
+    
   </head>
-
-  <body dir="ltr">
-    <input
-      class="md-toggle"
-      data-md-toggle="drawer"
-      type="checkbox"
-      id="__drawer"
-      autocomplete="off"
-    />
-    <input
-      class="md-toggle"
-      data-md-toggle="search"
-      type="checkbox"
-      id="__search"
-      autocomplete="off"
-    />
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      <a href="#welcome-to-mkdocs" class="md-skip"> Skip to content </a>
-    </div>
-    <div data-md-component="announce"></div>
-
-    <header class="md-header md-header--shadow" data-md-component="header">
-      <nav class="md-header__inner md-grid" aria-label="Header">
-        <a
-          href="."
-          title="LaTeX for Dummies"
-          class="md-header__button md-logo"
-          aria-label="LaTeX for Dummies"
-          data-md-component="logo"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path
-              d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"
-            />
-          </svg>
+      
+        
+        <a href="#latex-for-dummies" class="md-skip">
+          Skip to content
         </a>
-        <label class="md-header__button md-icon" for="__drawer">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
-          </svg>
-        </label>
-        <div class="md-header__title" data-md-component="header-title">
-          <div class="md-header__ellipsis">
-            <div class="md-header__topic">
-              <span class="md-ellipsis"> LaTeX for Dummies </span>
-            </div>
-            <div class="md-header__topic" data-md-component="header-topic">
-              <span class="md-ellipsis"> Welcome to MkDocs </span>
-            </div>
-          </div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="LaTeX for Dummies" class="md-header__button md-logo" aria-label="LaTeX for Dummies" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LaTeX for Dummies
+          </span>
         </div>
-
-        <script>
-          var palette = __md_get("__palette");
-          if (palette && palette.color) {
-            if ("(prefers-color-scheme)" === palette.color.media) {
-              var media = matchMedia("(prefers-color-scheme: light)"),
-                input = document.querySelector(
-                  media.matches
-                    ? "[data-md-color-media='(prefers-color-scheme: light)']"
-                    : "[data-md-color-media='(prefers-color-scheme: dark)']",
-                );
-              ((palette.color.media = input.getAttribute(
-                "data-md-color-media",
-              )),
-                (palette.color.scheme = input.getAttribute(
-                  "data-md-color-scheme",
-                )),
-                (palette.color.primary = input.getAttribute(
-                  "data-md-color-primary",
-                )),
-                (palette.color.accent = input.getAttribute(
-                  "data-md-color-accent",
-                )));
-            }
-            for (var [key, value] of Object.entries(palette.color))
-              document.body.setAttribute("data-md-color-" + key, value);
-          }
-        </script>
-
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              $LaTeX{}$: for Dummies
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
         <label class="md-header__button md-icon" for="__search">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path
-              d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"
-            />
-          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
-          <label class="md-search__overlay" for="__search"></label>
-          <div class="md-search__inner" role="search">
-            <form class="md-search__form" name="search">
-              <input
-                type="text"
-                class="md-search__input"
-                name="query"
-                aria-label="Search"
-                placeholder="Search"
-                autocapitalize="off"
-                autocorrect="off"
-                autocomplete="off"
-                spellcheck="false"
-                data-md-component="search-query"
-                required
-              />
-              <label class="md-search__icon md-icon" for="__search">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"
-                  />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <path
-                    d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"
-                  />
-                </svg>
-              </label>
-              <nav class="md-search__options" aria-label="Search">
-                <button
-                  type="reset"
-                  class="md-search__icon md-icon"
-                  title="Clear"
-                  aria-label="Clear"
-                  tabindex="-1"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                      d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </button>
-              </nav>
-            </form>
-            <div class="md-search__output">
-              <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-                <div class="md-search-result" data-md-component="search-result">
-                  <div class="md-search-result__meta">Initializing search</div>
-                  <ol class="md-search-result__list" role="presentation"></ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
       </nav>
-    </header>
-
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
     <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
-          <div
-            class="md-sidebar md-sidebar--primary"
-            data-md-component="sidebar"
-            data-md-type="navigation"
-          >
-            <div class="md-sidebar__scrollwrap">
-              <div class="md-sidebar__inner">
-                <nav
-                  class="md-nav md-nav--primary"
-                  aria-label="Navigation"
-                  data-md-level="0"
-                >
-                  <label class="md-nav__title" for="__drawer">
-                    <a
-                      href="."
-                      title="LaTeX for Dummies"
-                      class="md-nav__button md-logo"
-                      aria-label="LaTeX for Dummies"
-                      data-md-component="logo"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"
-                        />
-                      </svg>
-                    </a>
-                    LaTeX for Dummies
-                  </label>
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
 
-                  <ul class="md-nav__list" data-md-scrollfix>
-                    <li class="md-nav__item md-nav__item--active">
-                      <input
-                        class="md-nav__toggle md-toggle"
-                        type="checkbox"
-                        id="__toc"
-                      />
 
-                      <label
-                        class="md-nav__link md-nav__link--active"
-                        for="__toc"
-                      >
-                        <span class="md-ellipsis"> Welcome to MkDocs </span>
 
-                        <span class="md-nav__icon md-icon"></span>
-                      </label>
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="LaTeX for Dummies" class="md-nav__button md-logo" aria-label="LaTeX for Dummies" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
-                      <a href="." class="md-nav__link md-nav__link--active">
-                        <span class="md-ellipsis"> Welcome to MkDocs </span>
-                      </a>
+    </a>
+    LaTeX for Dummies
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    $LaTeX{}$: for Dummies
+  
 
-                      <nav
-                        class="md-nav md-nav--secondary"
-                        aria-label="Table of contents"
-                      >
-                        <label class="md-nav__title" for="__toc">
-                          <span class="md-nav__icon md-icon"></span>
-                          Table of contents
-                        </label>
-                        <ul
-                          class="md-nav__list"
-                          data-md-component="toc"
-                          data-md-scrollfix
-                        >
-                          <li class="md-nav__item">
-                            <a href="#commands" class="md-nav__link">
-                              <span class="md-ellipsis"> Commands </span>
-                            </a>
-                          </li>
+    
+  </span>
+  
+  
 
-                          <li class="md-nav__item">
-                            <a href="#project-layout" class="md-nav__link">
-                              <span class="md-ellipsis"> Project layout </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </li>
-                  </ul>
-                </nav>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    $LaTeX{}$: for Dummies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is $LaTeX{}$?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with-vs-without-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        With vs. Without $LaTeX{}$
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-types-of-classes-can-latex-be-used-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What types of classes can $LaTeX{}$ be used for?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-document-tex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your First Document (.tex)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Your First Document (.tex)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-to-write-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to Write $LaTeX{}$
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inline-vs-display-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inline vs. Display Math
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computer-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Computer Science
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computer Science">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Math &amp; Statistics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Math &amp; Statistics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calculus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Algebra
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linear Algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probability-and-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probability and Statistics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Physics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-kinematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Kinematics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        More Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
 
-          <div
-            class="md-sidebar md-sidebar--secondary"
-            data-md-component="sidebar"
-            data-md-type="toc"
-          >
-            <div class="md-sidebar__scrollwrap">
-              <div class="md-sidebar__inner">
-                <nav
-                  class="md-nav md-nav--secondary"
-                  aria-label="Table of contents"
-                >
-                  <label class="md-nav__title" for="__toc">
-                    <span class="md-nav__icon md-icon"></span>
-                    Table of contents
-                  </label>
-                  <ul
-                    class="md-nav__list"
-                    data-md-component="toc"
-                    data-md-scrollfix
-                  >
-                    <li class="md-nav__item">
-                      <a href="#commands" class="md-nav__link">
-                        <span class="md-ellipsis"> Commands </span>
-                      </a>
-                    </li>
-
-                    <li class="md-nav__item">
-                      <a href="#project-layout" class="md-nav__link">
-                        <span class="md-ellipsis"> Project layout </span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is $LaTeX{}$?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with-vs-without-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        With vs. Without $LaTeX{}$
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-types-of-classes-can-latex-be-used-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What types of classes can $LaTeX{}$ be used for?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-document-tex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your First Document (.tex)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Your First Document (.tex)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-to-write-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to Write $LaTeX{}$
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inline-vs-display-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inline vs. Display Math
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#computer-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Computer Science
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computer Science">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#math-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Math &amp; Statistics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Math &amp; Statistics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calculus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linear-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linear Algebra
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linear Algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#probability-and-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probability and Statistics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Physics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-kinematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Kinematics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        More Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
 
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-              <p>
-                For full documentation visit
-                <a href="https://www.mkdocs.org">mkdocs.org</a>.
-              </p>
-              <h2 id="commands">Commands</h2>
-              <ul>
-                <li>
-                  <code>mkdocs new [dir-name]</code> - Create a new project.
-                </li>
-                <li>
-                  <code>mkdocs serve</code> - Start the live-reloading docs
-                  server.
-                </li>
-                <li>
-                  <code>mkdocs build</code> - Build the documentation site.
-                </li>
-                <li><code>mkdocs -h</code> - Print help message and exit.</li>
-              </ul>
-              <h2 id="project-layout">Project layout</h2>
-              <pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+
+
+<h1 id="latex-for-dummies">$LaTeX{}$: for Dummies</h1>
+<p>By David O'Regan, Blu Medina, Walter Adams</p>
+<h3 id="what-is-latex">What is $LaTeX{}$?</h3>
+<p>$LaTeX{}$ is like a programming language for writing documents. Instead of clicking buttons, like in Microsoft Word, you type your content along with specific text commands to format it.</p>
+<p><strong>Benefits of $LaTeX{}$</strong>:</p>
+<ul>
+<li>Creates clean equations for complex math that would otherwise be messy--for instance changing A subseteq B to $A \subseteq B$.</li>
+<li>Makes math more understandable as equations are visualized rather than typed out.</li>
+<li>Gives professors an easier time when grading math homework submitted in online documents such as <code>.md</code> and <code>.tex</code> files.</li>
+</ul>
+<h3 id="with-vs-without-latex">With vs. Without $LaTeX{}$</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">With $LaTeX{}$</th>
+<th style="text-align: center;">Without $LaTeX{}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="With LaTeX" src="https://hackmd.io/_uploads/r1ic3i56Ml.png" /></td>
+<td style="text-align: center;"><img alt="Without LaTeX" src="https://hackmd.io/_uploads/Skschjcafg.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-types-of-classes-can-latex-be-used-for">What types of classes can $LaTeX{}$ be used for?</h3>
+<p>$LaTeX{}$ can be used in a variety of courses, especially those that involve mathematical equations, scientific notation, or technical writing. While it is most commonly associated with mathematics, it is also useful in other fields where clear formatting and organization are important.</p>
+<p>Classes that we will be covering in this short quick start + cheat sheet guide are:</p>
+<blockquote>
+<p><a href="#computer-science-section"><strong>Computer Science</strong></a></p>
+<p><a href="#math-section"><strong>Math &amp; Statistics</strong></a></p>
+<p><a href="#physics-section"><strong>Physics</strong></a></p>
+</blockquote>
+<p>But $LaTeX{}$ can also be useful in other subjects, such as engineering, chemistry, and economics, or really any subject where documents require specialized notation or formatting.</p>
+<h2 id="your-first-document-tex">Your First Document (.tex)</h2>
+<h5 id="where-to-write-latex">Where to Write $LaTeX{}$</h5>
+<p>To turn your code into a finished PDF, you need a $LaTeX{}$ editor. We recommend <a href="https://www.overleaf.com">Overleaf</a>, a free online editor that works right in your browser, so there is nothing to install.</p>
+<p>Every $LaTeX{}$ document starts with a preamble that tells the editor what kind of document you are making and what packages need to be loaded.</p>
+<h5 id="example">Example</h5>
+<pre><code>\documentclass[12pt, letterpaper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{My First LaTeX Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This is my first paragraph. Inline math looks like $x^2 + y^2 = z^2$. % Inline math
+
+\section{Problem 1}
+Display math gets its own line:
+\[
+  \int_{0}^{1} x^2 \, dx = \frac{1}{3}  % Display math
+\]
+
+\end{document}
 </code></pre>
-            </article>
-          </div>
+<p><code>\documentclass</code> is used to determine the type of document you are creating. For nearly all homework assignments <code>{article}</code> is what you should use.</p>
+<p><code>\usepackage</code> loads extra tools. amsmath gives you better equation formatting, and amssymb is needed for symbols like $\mathbb{R}$.</p>
+<blockquote>
+<p>[!WARNING]
+Forgetting to set a document class or define used packages can cause certain $LaTeX{}$ functions to not be recognized by your .tex file!</p>
+</blockquote>
+<p><code>\title</code>, <code>\author</code>, and <code>\date</code> only store information. Nothing will show up until you call <code>\maketitle</code> inside the document.</p>
+<p><code>\section{}</code> creates a numbered heading, which makes it easy to split homework into Problem 1, Problem 2, etc.</p>
+<h5 id="inline-vs-display-math">Inline vs. Display Math</h5>
+<ul>
+<li>Inline math goes between single dollar signs, like $x^2$, and stays in the same line as your text.</li>
+<li>Display math goes between [ and ] and is centered on its own line.
+  To show work step by step, use align* and put &amp; before each = so they line up:</li>
+</ul>
+<pre><code>\begin{align*}
+  2x + 3 &amp;= 7 \\
+  2x &amp;= 4 \\
+  x &amp;= 2
+\end{align*}
+</code></pre>
+<p>\begin{align<em>}
+2x + 3 &amp;= 7 \
+2x &amp;= 4 \
+x &amp;= 2
+\end{align</em>}</p>
+<p>Quick-Reference Cheat Sheet:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>$LaTeX{}$ code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$\frac{a}{b}$</td>
+<td>Fraction</td>
+<td><code>\frac{a}{b}</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\sqrt{x}$</td>
+<td>Square root</td>
+<td><code>\sqrt{x}</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>$x^{n}$</td>
+<td>Superscript (exponent)</td>
+<td><code>x^{n}</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$x_{i}$</td>
+<td>Subscript</td>
+<td><code>x_{i}</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\sum_{i=1}^{n} a_i$</td>
+<td>Summation</td>
+<td><code>\sum_{i=1}^{n} a_i</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\int_{a}^{b} f(x)\,dx$</td>
+<td>Integral</td>
+<td><code>\int_{a}^{b} f(x)\,dx</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\infty$</td>
+<td>Infinity</td>
+<td><code>\infty</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>$\alpha$ $\beta$ $\theta$ $\lambda$</td>
+<td>Greek letters</td>
+<td><code>\alpha</code>, <code>\beta</code>, <code>\theta</code>, <code>\lambda</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>$\leq$ $\geq$ $\neq$ $=$ $\equiv$ $\cong$ $\approx$</td>
+<td>Inequalities</td>
+<td><code>\leq</code>, <code>\geq</code>, <code>\neq</code>, <code>=</code>, <code>\equiv</code>, <code>\cong</code>, <code>\approx</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td>$\times$ $\cdot$ $+$ $-$</td>
+<td>Operations</td>
+<td><code>\times</code>, <code>\cdot</code>, <code>+</code>, <code>-</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>$\rightarrow$</td>
+<td>Right arrow (implies / maps to)</td>
+<td><code>\rightarrow</code> (or <code>\to</code>)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>$\in$ $\subset$ $\subseteq$</td>
+<td>Set Theory</td>
+<td><code>\in</code>, <code>\subset</code>, <code>\subseteq</code></td>
+</tr>
+<tr>
+<td>13</td>
+<td>$\lim_{x \to 0} f(x)$</td>
+<td>Limit</td>
+<td><code>\lim_{x \to 0} f(x)</code></td>
+</tr>
+<tr>
+<td>14</td>
+<td>$\frac{\partial f}{\partial x}$</td>
+<td>Partial derivative</td>
+<td><code>\frac{\partial f}{\partial x}</code></td>
+</tr>
+<tr>
+<td>15</td>
+<td>$n \choose k$, $\begin{bmatrix}x \y\end{bmatrix}$</td>
+<td>Binomials and Matrices</td>
+<td><code>n \choose k</code> or <code>\binom{n}{k}</code>,<code>\begin{bmatrix}x \\y\end{bmatrix}</code></td>
+</tr>
+<tr>
+<td>16</td>
+<td>$\mathbb{R}$, $\mathbb{Z}$, $\mathbb{N}$</td>
+<td>Common Sets</td>
+<td><code>\mathbb{R}</code>,<code>\mathbb{Z}</code>, <code>\mathbb{N}</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="computer-science"><a id='computer-science-section'> Computer Science </a></h2>
+<p>$LaTeX{}$ is often used within Computer Science for classes such as Discrete Math, Combinatorics, and other proof-based classes. Reading the math for these classes without $LaTeX{}$ can be long and confusing.</p>
+<p>You often use inline $LaTeX{}$ in Computer Science to make proofs easier to read.</p>
+<blockquote>
+<p>[!TIP]
+Inline $LaTeX{}$ is a symbol--such as $x_2$--surrounded by text. It is created by enclosing your desired symbols in dollar signs. <strong>Example:</strong> <code>$x_2$</code> $\rightarrow x_2$</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>$LaTeX{}$ code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$\frac{a}{b}$</td>
+<td>Fraction</td>
+<td><code>\frac{a}{b}</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>$x^{n}$</td>
+<td>Superscript (exponent)</td>
+<td><code>x^{n}</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>$x_{i}$</td>
+<td>Subscript</td>
+<td><code>x_{i}</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\infty$</td>
+<td>Infinity</td>
+<td><code>\infty</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\alpha$ $\beta$ $\theta$ $\lambda$</td>
+<td>Greek letters</td>
+<td><code>\alpha</code>, <code>\beta</code>, <code>\theta</code>, <code>\lambda</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\leq$ $\geq$ $\neq$ $=$ $\equiv$ $\cong$ $\approx$</td>
+<td>Inequalities</td>
+<td><code>\leq</code>, <code>\geq</code>, <code>\neq</code>, <code>=</code>, <code>\equiv</code>, <code>\cong</code>, <code>\approx</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\times$ $\cdot$ $+$ $-$</td>
+<td>Operations</td>
+<td><code>\times</code>, <code>\cdot</code>, <code>+</code>, <code>-</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>$\rightarrow$</td>
+<td>Right arrow (implies / maps to)</td>
+<td><code>\rightarrow</code> (or <code>\to</code>)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>$\in$ $\subset$ $\subseteq$</td>
+<td>Element of</td>
+<td><code>\in</code>, <code>\subset</code>, <code>\subseteq</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td>$\mathbb{R}$, $\mathbb{Z}$, $\mathbb{N}$</td>
+<td>Common Sets</td>
+<td><code>\mathbb{R}</code>,<code>\mathbb{Z}</code>, <code>\mathbb{N}</code></td>
+</tr>
+</tbody>
+</table>
+<p>In Computer Science, $LaTeX{}$ can also be used to denote algorithms, boolean logic, sets and relations, and pseudocode.</p>
+<blockquote>
+<p>[!TIP]
+Boolean Logic is very prevalent in proofs and truth tables.</p>
+</blockquote>
+<p><strong>Boolean Logic:</strong>
+| Symbol | Meaning | $LaTeX{}$ Code |
+| ---------- | -------------------------------------------------------------------------------- | -------------- |
+| $\land$ | <strong>Conjunction:</strong> True and only if both inputs are True. | <code>$\land$</code> |
+| $\lor$ | <strong>Disjunction:</strong> True if at least one input is True. | <code>$\lor$</code> |
+| $\neg$ | <strong>NOT:</strong> If $A$ is True than $\neg A$ if False and vice versa. | <code>$\neg$</code> |
+| $\oplus$ | <strong>Exclusive OR:</strong> Only yields True if the inputs are different. | <code>$\oplus$</code> |
+| $\implies$ |<strong>Implies:</strong> Yields False only when a True premise leads to a False conclusion. | <code>$\implies$</code>
+| $\iff$ | <strong>Biconditional:</strong> Yields True only when both inputs have the exact same truth value. | <code>$\iff$</code> |
+| $\top$ | <strong>Tautology:</strong> A statement that is always inherently True under all conditions. | <code>$\top$</code> |
+| $\bot$ | <strong>Contradiction:</strong> A statement that is always inherently False under all conditions. | <code>$\bot$</code> |</p>
+<h3 id="tables">Tables</h3>
+<p>As mentioned above, boolean logic can be very helpful in truth tables.</p>
+<p>To create truth tables, you need to know how to create tables and how to use $LaTeX{}$ with them. Tables only have <strong>two</strong> requirements: the use of <code>|</code> and <code>-</code> to create the basic structure. Other than that, you may edit them freely!</p>
+<ol>
+<li>The first row of a table--usually where you find your column headers--is going to look like this in <code>.md</code> and <code>.tex</code> files:</li>
+</ol>
+<pre><code>| Column 1 | Column 2 | Column 3 | And so on ... |
+| -------- | -------- | -------- | ------------- |
+</code></pre>
+<p>to create:</p>
+<table>
+<thead>
+<tr>
+<th>Column 1</th>
+<th>Column 2</th>
+<th>Column 3</th>
+<th>And so on ...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>The following rows are made of continuing vertical bars to identify the start and end of columns. After the first full dashed line, it is no longer needed to indicate new rows. So, to create extra rows you need to write:</li>
+</ol>
+<pre><code>| OLD Column 1 | OLD Column 2 | OLD Column 3 | OLD And so on ... |
+| ------------ | ------------ | ------------ | ----------------- |
+| Row 1 | Row 1 | Row 1 | Row 1 |
+| Row 2 | Row 2 | Row 2 | Row 2 | Row 2|
 
-          <script>
-            var target = document.getElementById(location.hash.slice(1));
-            target &&
-              target.name &&
-              (target.checked = target.name.startsWith("__tabbed_"));
-          </script>
-        </div>
-      </main>
+</code></pre>
+<p>to create:
+| OLD Column 1 | OLD Column 2 | OLD Column 3 | OLD And so on ... |
+| ------------ | ------------ | ------------ | ----------------- |
+| Row 1 | Row 1 | Row 1 | Row 1 |
+| Row 2 | Row 2 | Row 2 | Row 2 |</p>
+<blockquote>
+<p>[!NOTE]
+Notice how the column lines are aligned for the column names and dashes but not any of the rows? This is a unique feature of tables where you <strong>do not</strong> have to align any aspect of the tables, and it will format the table in a presentable manner by itself. The alignment of rows is a personal preference, not a requirement. 3. Once you have your table, you can add whatever you'd like in it. This includes images, hyperlinks, inline styles, lists, and more. This section, though, focuses on inline and display $LaTeX{}$.</p>
+</blockquote>
+<pre><code>- To add inline $LaTeX{}$ you'd follow the normal procedure for inline, just in a table!
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>With Text</th>
+<th>Example</th>
+<th>Alone</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>This is AND $\land$ a Boolean Operator</td>
+<td><code>This is AND $\land$ a Boolean Operator</code></td>
+<td>$\land$</td>
+<td><code>\land</code></td>
+</tr>
+</tbody>
+</table>
+<p>Now you can create Truth Tables:
+| $P$ | $Q$ | $P \land Q$ | $P \lor Q$ | $P \implies Q$ |
+| :---: | :---: | :---: | :---: | :---: |
+| T | T | T | T | T |
+| T | F | F | T | F |
+| F | T | F | T | T |
+| F | F | F | F | T |</p>
+<h2 id="math-statistics"><a id='math-section'> Math &amp; Statistics </a></h2>
+<p>$LaTeX{}$ is widely used in Mathematics and Statistics courses, particularly in classes like Calculus, Linear Algebra, Probability, and Mathematical Statistics. These subjects often involve complex equations, notations, formulae, and proofs that can be difficult to format using traditional word processors.</p>
+<blockquote>
+<p>[!TIP]
+$LaTeX{}$ codes can be combined and stacked, allowing you to create complex formulae, for example:
+$y = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}$
+is created by nesting a plus-or-minus <code>\pm</code>, a superscript <code>x^{}</code>, and a square root <code>\sqrt{}</code> within a fraction <code>\frac{}{}</code></p>
+</blockquote>
+<p>General Mathematical Notations:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>$LaTeX{}$ code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$\frac{a}{b}$</td>
+<td>Fraction</td>
+<td><code>\frac{a}{b}</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\sqrt{x}$</td>
+<td>Square root</td>
+<td><code>\sqrt{x}</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>$x^{n}$</td>
+<td>Superscript (exponent)</td>
+<td><code>x^{n}</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$x_{i}$</td>
+<td>Subscript</td>
+<td><code>x_{i}</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\sum_{i=1}^{n} a_i$</td>
+<td>Summation</td>
+<td><code>\sum_{i=1}^{n} a_i</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\infty$</td>
+<td>Infinity</td>
+<td><code>\infty</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\alpha$ $\beta$ $\theta$ $\lambda$</td>
+<td>Greek letters</td>
+<td><code>\alpha</code>, <code>\beta</code>, <code>\theta</code>, <code>\lambda</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>$\leq$ $\geq$ $\neq$ $=$ $\equiv$ $\cong$ $\approx$</td>
+<td>Inequalities</td>
+<td><code>\leq</code>, <code>\geq</code>, <code>\neq</code>, <code>=</code>, <code>\equiv</code>, <code>\cong</code>, <code>\approx</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>$\times$ $\cdot$ $+$ $-$ $\pm$</td>
+<td>Operations</td>
+<td><code>\times</code>, <code>\cdot</code>, <code>+</code>, <code>-</code> <code>\pm</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td>$\in$ $\subset$ $\subseteq$</td>
+<td>Element of</td>
+<td><code>\in</code>, <code>\subset</code>, <code>\subseteq</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>$\mathbb{R}$, $\mathbb{Z}$, $\mathbb{N}$</td>
+<td>Common Sets</td>
+<td><code>\mathbb{R}</code>,<code>\mathbb{Z}</code>, <code>\mathbb{N}</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculus">Calculus</h3>
+<p>Calculus relies heavily on $LaTeX{}$ because it involves derivatives, integrals, limits, and other expressions that can become difficult to read when written in plain text.</p>
+<p>Some common examples include:</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Example</th>
+<th>$LaTeX{}$ Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Derivative</td>
+<td>$\frac{dy}{dx}$</td>
+<td><code>\frac{dy}{dx}</code></td>
+</tr>
+<tr>
+<td>$2^{nd}$ Derivative</td>
+<td>$\frac{d^2y}{dx^2}$</td>
+<td><code>\frac{d^2y}{dx^2}</code></td>
+</tr>
+<tr>
+<td>Partial derivative</td>
+<td>$\frac{\partial f}{\partial x}$</td>
+<td><code>\frac{\partial f}{\partial x}</code></td>
+</tr>
+<tr>
+<td>Definite Integral</td>
+<td>$\int_0^b f(x)\,dx$</td>
+<td><code>\int_0^b f(x)\,dx</code></td>
+</tr>
+<tr>
+<td>Limit</td>
+<td>$\lim_{x\to\infty} f(x)$</td>
+<td><code>\lim_{x\to\infty} f(x)</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!TIP]
+When showing your work for a derivative, you can use align* to organize each step:</p>
+<p><code>\begin{align*}
+f(x) &amp;= x^2 + 3x \\
+f'(x) &amp;= 2x + 3
+\end{align*}</code></p>
+<p>$\begin{align<em>}
+f(x) &amp;= x^2 + 3x \
+f'(x) &amp;= 2x + 3
+\end{align</em>}$</p>
+<p>This produces aligned equations that make your work easy to follow.</p>
+</blockquote>
+<h3 id="linear-algebra">Linear Algebra</h3>
+<p>Linear Algebra uses matrices, vectors, and systems of equations. $LaTeX{}$ makes these especially easy to format using environments such as bmatrix and pmatrix.</p>
+<h4 id="example_1">Example:</h4>
+<pre><code>\begin{bmatrix}
+1 &amp; 2 \\
+3 &amp; 4
+\end{bmatrix}
+</code></pre>
+<p>Produces:</p>
+<p>$\begin{bmatrix}
+1 &amp; 2 \
+3 &amp; 4
+\end{bmatrix}$</p>
+<p>You can also use a <code>\det(A)</code> to represent the determinant of a matrix, or <code>\vec{v}</code> to represent a vector.</p>
+<h3 id="probability-and-statistics">Probability and Statistics</h3>
+<p>Probability and Statistics use $LaTeX{}$ to represent distributions, probabilities, expected values, and statistical formulae.</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Example</th>
+<th>$LaTeX{}$ Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Probability</td>
+<td>$P(A)$</td>
+<td><code>P(A)</code></td>
+</tr>
+<tr>
+<td>Conditional Probability</td>
+<td>$P(A\mid B)$</td>
+<td><code>P(A\mid B)</code></td>
+</tr>
+<tr>
+<td>Expected Value</td>
+<td>$E[X]$</td>
+<td><code>E[X]</code></td>
+</tr>
+<tr>
+<td>Variance</td>
+<td>$\operatorname{Var}(X)$</td>
+<td><code>\operatorname{Var}(X)</code></td>
+</tr>
+<tr>
+<td>Standard Deviation</td>
+<td>$\sigma$</td>
+<td><code>\sigma</code></td>
+</tr>
+<tr>
+<td>Normal Distribution</td>
+<td>$X\sim N(\mu,\sigma^2)$</td>
+<td><code>X\sim N(\mu,\sigma^2)</code></td>
+</tr>
+<tr>
+<td>Binomials</td>
+<td>$\binom{n}{k}$</td>
+<td><code>n \choose k</code> or <code>\binom{n}{k}</code></td>
+</tr>
+</tbody>
+</table>
+<p>These tools are particularly useful when writing statistical proofs, showing calculations, or presenting probability distributions in homework assignments.</p>
+<h2 id="physics"><a id='physics-section'> Physics </a></h2>
+<p>$LaTeX{}$ is used throughout Physics courses such as Mechanics, Electricity &amp; Magnetism, Thermodynamics, and Quantum Mechanics. Physics relies heavily on vectors, derivatives, and Greek letters, which are almost impossible to type cleanly without $LaTeX{}$.</p>
+<blockquote>
+<p>[!TIP]
+Use <code>\text{}</code> to write units so they don't come out italic like variables. <strong>Example:</strong> <code>$9.8 \, \text{m/s}^2$</code> $\rightarrow 9.8 \, \text{m/s}^2$</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>$LaTeX{}$ code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$\vec{v}$</td>
+<td>Vector</td>
+<td><code>\vec{v}</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\hat{x}$</td>
+<td>Unit vector</td>
+<td><code>\hat{x}</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>$\dot{x}$, $\ddot{x}$</td>
+<td>Time derivatives</td>
+<td><code>\dot{x}</code>, <code>\ddot{x}</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\Delta x$</td>
+<td>Change in</td>
+<td><code>\Delta x</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\nabla$</td>
+<td>Gradient (del)</td>
+<td><code>\nabla</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\vec{a} \cdot \vec{b}$, $\vec{a} \times \vec{b}$</td>
+<td>Dot and cross product</td>
+<td><code>\vec{a} \cdot \vec{b}</code>, <code>\vec{a} \times \vec{b}</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\hbar$</td>
+<td>Reduced Planck constant</td>
+<td><code>\hbar</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>$\varepsilon_0$, $\mu_0$</td>
+<td>Electric and magnetic constants</td>
+<td><code>\varepsilon_0</code>, <code>\mu_0</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>$\omega$ $\Omega$ $\rho$ $\tau$ $\phi$</td>
+<td>More Greek letters</td>
+<td><code>\omega</code>, <code>\Omega</code>, <code>\rho</code>, <code>\tau</code>, <code>\phi</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td>$\propto$</td>
+<td>Proportional to</td>
+<td><code>\propto</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>$30^\circ$</td>
+<td>Degrees</td>
+<td><code>30^\circ</code></td>
+</tr>
+<tr>
+<td>12</td>
+<td>$\frac{d^2x}{dt^2}$</td>
+<td>Second derivative</td>
+<td><code>\frac{d^2x}{dt^2}</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="quick-kinematics">Quick Kinematics</h3>
+<p>Kinematics is a branch of Physics that describes motion, often using displacement, velocity, acceleration, and time. $LaTeX{}$ makes it easy to write these equations clearly with all their exponents and subscripts.</p>
+<p>The four basic kinematic equations are:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Equation</th>
+<th>$LaTeX{}$ Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$v_f = v_i + at$</td>
+<td><code>v_f = v_i + at</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\Delta x = v_i t + \frac{1}{2}at^2$</td>
+<td><code>\Delta x = v_i t + \frac{1}{2}at^2</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>$v_f^2 = v_i^2 + 2a\Delta x$</td>
+<td><code>v_f^2 = v_i^2 + 2a\Delta x</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\Delta x = \frac{v_i+v_f}{2}t$</td>
+<td><code>\Delta x = \frac{v_i+v_f}{2}t</code></td>
+</tr>
+</tbody>
+</table>
+<p>These equations demonstrate how $LaTeX{}$ can combine subscripts, superscripts, fractions, and Greek letters into readable physics formulae.</p>
+<h2 id="more-information">More Information</h2>
+<p>If you would like to dive deeper into the intricacies of $LaTeX{}$, please visit <a href="https://www.latex-project.org/help/documentation/">the Official $LaTeX{}$ Documentation</a>!</p>
 
-      <footer class="md-footer">
-        <div class="md-footer-meta md-typeset">
-          <div class="md-footer-meta__inner md-grid">
-            <div class="md-copyright">
-              Made with
-              <a
-                href="https://squidfunk.github.io/mkdocs-material/"
-                target="_blank"
-                rel="noopener"
-              >
-                Material for MkDocs
-              </a>
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-          </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-      </footer>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-
-    <script id="__config" type="application/json">
-      {
-        "annotate": null,
-        "base": ".",
-        "features": [],
-        "search": "assets/javascripts/workers/search.a7633da7.min.js",
-        "tags": null,
-        "translations": {
-          "clipboard.copied": "Copied to clipboard",
-          "clipboard.copy": "Copy to clipboard",
-          "search.result.more.one": "1 more on this page",
-          "search.result.more.other": "# more on this page",
-          "search.result.none": "No matching documents",
-          "search.result.one": "1 matching document",
-          "search.result.other": "# matching documents",
-          "search.result.placeholder": "Type to start searching",
-          "search.result.term.missing": "Missing",
-          "select.version": "Select version"
-        },
-        "version": null
-      }
-    </script>
-
-    <script src="assets/javascripts/bundle.a5f9d56c.min.js"></script>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
   </body>
 </html>
